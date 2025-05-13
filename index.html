@@ -12,41 +12,68 @@
 <!-- Início do copro da página -->
 <body>
     <!-- Cabeçalho com informaçôes de perfil -->
-    <header>
-        <img src="avatar-perfil.png" alt="avatar da Kuria" width="150" height="150">
+    <header class="container text-center mt-5">
+        <img src="img/avatar-perfil.png" class="rounded-circle" width="150" height="150" alt="avatar CARLOS">
         <p>Eu sou CARLOS_</p>
         <h1>Eu ensino robotica e programação</h1>
         <p>Sou engenheiro de computação e professor. Ensino pensamento computacional usando HTML, CSS e JavaScript.</p>
         <p>Minhas habilidades:</p>
-        <ul>
-            <li>HTML</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>Scractch</li>
-        </ul>
+        <div>
+            <!-- Exibe uma habilidade como selo visual -->
+            <span class="badge bg-secondary">HTML</span>
+            <!-- Exibe uma habilidade como selo visual -->
+            <span class="badge bg-secondary">CSS</span>
+             <!-- Exibe uma habilidade como selo visual -->
+            <span class="badge bg-secondary">JavaScript</span>
+            <!-- Exibe uma habilidade como selo visual -->
+            <span class="badge bg-secondary">Scratch</span>
+        </div>
     </header>
-    <!-- Conteúdo principal com a lista de projetos -->
-     <main>
-        <h2>Meus projetos</h2>
-        <section>
-            <h3>Projeto 1</h3>
-            <p>Minha Biblioteca: Uma Webpage Personalizada</p>
-        </section>
-        <section>
-            <h3>Projeto 2</h3>
-            <p>Decidindo o futuro: Uma Jornada Interativa sobre a Inteligência Artificial</p>
-        </section>
-        <section>
-            <h3>Projeto 3</h3>
-            <p>Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch</p>
-        </section>
-     </main>
-     <!-- Rodapé com informaçoes de contato -->
-    <footer>
-        <h2>Entre em contato</h2>
-        <p>GitHub: femascheti</p>
-        <p>© 2024 CARLOS</p>
-    </footer>
 
+
+    <!-- Conteúdo principal com a lista de projetos -->
+     <main class="container mt-5">
+        <h2 class="text-center">Meus projetos</h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Minha Biblioteca</h5>
+                        <p class="card-text">Página com livros favoritos estilizada com CSS</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#moda11">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </main>
+     <div class="moda1 fade" id="moda11" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="moda1-content">
+                  <div class="moda1-header">
+                     <h5 class="modal-title">Minha Biblioteca</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                 </div>
+                <div class="modal-footer">
+                     <a href="https://femascheti.github.io/minhas-leituras/">Ver ao vivo</a>
+                     <a href="https://github.com/femascheti/minhas-leituras/">Ver código</a>
+                 </div>
+             </div>
+        </div>
+     </div>
+<!-- Rodapé com informações de contato -->
+ <footer class="container py-5 text-center">
+    <h2>Entre em contato</h2>
+    <div>
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/femaschete">GitHub</a>
+    </div>
+    <p class="my-5">© 2024 CARLOS EMANUEL</p>
+</footer>
+<!-- Inclusão do JavaScript do Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/Bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
